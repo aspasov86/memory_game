@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css"
+</head>
+<body>
+  <!-- Navigation + timer -->
+  <nav class="nav navbar-default">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">Memory Game</a>
+      <p id="time"class="navbar-right navbar-brand">
+        00:00:00
+      </p>
+    </div>
+  </nav>
+
+  <!-- Enter name part -->
+  <div id="start" class="col-sm-2 col-sm-offset-5 text-center">
+    <div id="nameDiv">
+      <p></p>
+      <button id="change" class="btn btn-info form-control">Change user</button>
+    </div>
+    <div id="enterName">
+      <p>Enter your name: </p>
+      <input name='name' type="text" class="form-control">
+    </div><br>
+    <button id="startBtn" class="btn btn-success form-control">Start the Game</button>
+  </div>
+
+  <!-- Memory GAME -->
+  <div class="container"></div>
+
+  <!-- Scoreboard -->
+  <div class="col-sm-8 col-sm-offset-2">
+    <div id="scoreboard"></div>
+  </div>
+    
+  <script src="timer.js" charset="utf-8"></script>
+  <script src="main.js" charset="utf-8"></script>
+</body>
+</html>
